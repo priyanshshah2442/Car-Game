@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url(./bg-r.jpg); */
+    background-image: linear-gradient(rgb(155, 227, 107), rgb(36, 187, 53));
+    height: 100vh;
+    max-height: 100vh;
+    /* background-color: blue; */
+}
+#GameArea{
+    background-color: #023047;
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+#player_car{
+    position: absolute;
+    top:400px;
+    left:0px;
+    width: 50px;
+    height: 70px;
+    z-index: 4;
+  
+}
+.enemy_car{
+    /* position: absolute; */
+    width: 50px;
+    height: 70px;
+    
+    z-index: 5;
+
+}
+.startScreen,.endScreen{
+    position: relative;
+    background-color: aqua;
+    bottom:50vh;
+    z-index: 2;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.road{
+    width: 10px;
+    height:80px;
+    background-color: white;
+    position: absolute;
+    margin-left: 195px;
+
+}
+.enemy{
+    position: absolute;
+    z-index: 5;
+}
+#score{
+    width: 200px;
+    height: 50px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: 5;
+}
